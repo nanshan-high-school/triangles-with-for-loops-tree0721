@@ -42,9 +42,9 @@ int main() {
     
     cout<<"請問要設定幾個字母當密碼\n";
     cin>> b ;
-    
+     
     char c [b+1];
-    cout<<"請輸入大寫密碼\n";
+    cout<<"請輸入大寫密碼\n"
     cin>> c ;
     
     cout<<"位移幾個單位?\n";
@@ -53,9 +53,9 @@ int main() {
     
     for(int e=0 ; e<b; e++){
       
-    c[e] = c[e] + d ;
+    c[e] = c[e] - d ;
     
-      if(c[e]+d>90){
+      if(c[e]-d<65){
         c[e]=c[e]+ 90 - 65 +1;
     
       }
